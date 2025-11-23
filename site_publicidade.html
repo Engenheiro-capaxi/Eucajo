@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baixe Nosso App</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            max-width: 600px;
+            width: 100%;
+            padding: 40px;
+            text-align: center;
+        }
+        
+        .app-icon {
+            width: 120px;
+            height: 120px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 25px;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 60px;
+            color: white;
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+        }
+        
+        h1 {
+            color: #333;
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+        
+        .version {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        
+        .description {
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            font-size: 16px;
+        }
+        
+        .features {
+            text-align: left;
+            margin-bottom: 30px;
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        
+        .features h3 {
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+        
+        .features ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .features li {
+            color: #555;
+            padding: 8px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+        
+        .features li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #667eea;
+            font-weight: bold;
+        }
+        
+        .download-btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 18px 50px;
+            font-size: 18px;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+            text-decoration: none;
+            display: inline-block;
+            font-weight: bold;
+        }
+        
+        .download-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 15px 40px rgba(102, 126, 234, 0.5);
+        }
+        
+        .download-btn:active {
+            transform: translateY(0);
+        }
+        
+        .info {
+            margin-top: 30px;
+            padding: 20px;
+            background: #fff3cd;
+            border-radius: 10px;
+            border-left: 4px solid #ffc107;
+        }
+        
+        .info h4 {
+            color: #856404;
+            margin-bottom: 10px;
+        }
+        
+        .info p {
+            color: #856404;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            margin: 30px 0;
+            flex-wrap: wrap;
+        }
+        
+        .stat {
+            text-align: center;
+            padding: 10px;
+        }
+        
+        .stat-number {
+            font-size: 28px;
+            font-weight: bold;
+            color: #667eea;
+        }
+        
+        .stat-label {
+            font-size: 12px;
+            color: #666;
+            text-transform: uppercase;
+        }
+        
+        footer {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            color: #999;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="app-icon">📱</div>
+        
+        <h1>EuCajo</h1>
+        <p class="version">Versão 1.0.0</p>
+        
+        <p class="description">
+           O aplicativo Eucajo é uma inovação para usar a plataforma de forma leve e intuitiva. o aplicativo funciona para androids, tenha a sua praça e carteira nas mãos sem burocracias e faça compras.
+        </p>
+        
+        <div class="stats">
+            <div class="stat">
+                <div class="stat-number">100%</div>
+                <div class="stat-label">Grátis</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">5MB</div>
+                <div class="stat-label">Tamanho</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">Android</div>
+                <div class="stat-label">Plataforma</div>
+            </div>
+        </div>
+        
+        <div class="features">
+            <h3>🌟 Recursos Principais</h3>
+            <ul>
+                <li>Interface simples e intuitiva</li>
+                <li>Funciona com redes simples</li>
+                <li>Sem anúncios intrusivos</li>
+                <li>Atualizações regulares</li>
+            </ul>
+        </div>
+        
+        <a href="#" class="download-btn" id="downloadBtn">
+            ⬇️ Baixar APK
+        </a>
+        
+        <div class="info">
+            <h4>📋 Como Instalar</h4>
+            <p>
+                1. Baixe o arquivo APK<br>
+                2. Abra o arquivo baixado<br>
+                3. Se solicitado, habilite "Instalar de fontes desconhecidas" nas configurações<br>
+                4. Confirme a instalação
+            </p>
+        </div>
+        
+        <footer>
+            <p>Desenvolvido com ❤️ | Versão 1.0.0 | © 2024</p>
+        </footer>
+    </div>
+    
+    <script>
+        document.getElementById('downloadBtn').addEventListener('click', function(e) {
+            e.preventDefault();
+            alert('https://github.com/Engenheiro-capaxi/Vers-o-apk/releases/download/Beta/MeuApp_v0.0.0.4.apk');
+        });
+    </script>
+</body>
+</html>
